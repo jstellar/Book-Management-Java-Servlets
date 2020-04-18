@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+form {
+
+	margin: 0 auto;
+	width: 300px
+}
+
+input {
+	margin-bottom: 3px;
+	padding: 10px;
+	width: 100%;
+	border: 1px solid #CCC
+}
+
+button {
+	padding: 10px
+}
+
+label {
+	cursor: pointer
+}
+
+#form-switch {
+	display: none
+}
+
+#register-form {
+	display: none
+}
+
+#form-switch:checked ~#register-form {
+	display: block
+}
+
+#form-switch:checked ~#login-form {
+	display: none
+}
+</style>
+</head>
+<body>
+	<input type="checkbox" id='form-switch'>
+	<form id='login-form' action="user" method="post">
+		<input type="text" placeholder="Username" name="usr" required> 
+		<input type="password" placeholder="Password" name="pwd" required>
+		<button type='submit'>Login</button>
+		<label for='form-switch'><span>Register</span></label>
+	</form>
+	<form id='register-form' action="user" method="post">
+		<input type="text" placeholder="Username" name="usr" required> 
+		<input type="email" placeholder="Email" name="email" required> 
+		<input type="password" placeholder="Password" name="pwd" required> 
+		<input type="password" placeholder="Re Password" required>
+		<button type='submit'>Register</button>
+		<label for='form-switch'>Already Member ? Sign In Now..</label>
+	</form>
+</body>
+</html>

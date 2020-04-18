@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.login { 
+	height:110px;
+	width:190px;
+	margin:auto;
+	border:1px #CCC solid;
+	padding:10px;
+	margin: 0 auto;
+	
+}
+
+.login input { 
+	padding:5px;
+	margin:5px
+ }
